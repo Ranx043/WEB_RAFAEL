@@ -582,6 +582,39 @@
             font-size: 0.9rem;
         }
 
+        /* WHATSAPP FLOATING BUTTON */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: #FFF;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 4px 30px rgba(37, 211, 102, 0.7); }
+            100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
+        }
+
         /* RESPONSIVE */
         @media (max-width: 968px) {
             .hero-content,
@@ -658,8 +691,8 @@
                     <a href="#contacto" class="btn btn-primary">
                         <i class="fas fa-calendar-check"></i> Agendar Consulta
                     </a>
-                    <a href="tel:+18091234567" class="btn btn-secondary">
-                        <i class="fas fa-phone"></i> Llamar Ahora
+                    <a href="tel:+18495856051" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i> (849) 585-6051
                     </a>
                 </div>
             </div>
@@ -773,6 +806,26 @@
 
                 <div class="contact-item">
                     <div class="contact-item-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-item-text">
+                        <h4>Teléfono</h4>
+                        <p><a href="tel:+18495856051">(849) 585-6051</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-item-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="contact-item-text">
+                        <h4>WhatsApp</h4>
+                        <p><a href="https://wa.me/18495856051?text=Hola%20Lic.%20Marinez%2C%20necesito%20una%20consulta%20legal" target="_blank">(849) 585-6051</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-item-icon">
                         <i class="fas fa-clock"></i>
                     </div>
                     <div class="contact-item-text">
@@ -818,6 +871,11 @@
             <p class="footer-copy">&copy; 2025 Todos los derechos reservados | Abogado - Derecho Civil Dominicano</p>
         </div>
     </footer>
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/18495856051?text=Hola%20Lic.%20Marinez%2C%20necesito%20una%20consulta%20legal" class="whatsapp-float" target="_blank" title="Contáctenos por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
 </body>
 </html>
